@@ -1,0 +1,50 @@
+.bg-light {
+  background-color: #1babfff2 !important;
+  /*  width: 100%;
+  z-index: 2;
+  position: fixed; */
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.dropdown-item {
+  a {
+    color: #212529 !important;
+  }
+}
+
+
+
+.search-form{
+  padding-right: 20px;
+  .btn-primary{
+    position: absolute;
+    margin-left: 180px;
+    background-color: #8cc92059;
+    border-color: #8cc92059;
+    color: #000;
+  }
+}
+
+.login-cls{
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #000 !important;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .search-form{
+    .btn-primary{
+      margin-left: 77%;
+    }
+  }
+}
