@@ -124,13 +124,13 @@ const Login = (props) => {
                     <div className="inputBx">
                         <p>Don't have an account? <Link to="/signup"><a>Signup</a></Link></p>
             </div>
-            {message && (
+           {/*  {message && (
             <div className="form-group">
               <div className="alert alert-danger" role="alert">
                 {message}
               </div>
             </div>
-          )}
+          )} */}
             <CheckButton style={{ display: "none" }} ref={checkBtn} />
                     </Form>
 

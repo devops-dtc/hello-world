@@ -90,8 +90,8 @@ section .contentBx .formBx .inputBx span {
   /* margin-top: 5px; */
   display: inline-block;
   /* color: #607db8; */
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 15px;
   letter-spacing: 1px;
 }
 section .contentBx .formBx .inputBx input {
@@ -104,7 +104,7 @@ section .contentBx .formBx .inputBx input {
   letter-spacing: 1px;
   color: #607d8b;
   background: transparent;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   background: #fff;
 }
 section .contentBx .formBx .inputBx input[type="submit"] {

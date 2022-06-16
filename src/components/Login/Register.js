@@ -83,8 +83,6 @@ const Register = (props) => {
     }
   };
 
-  
-
 
   if (isLoggedIn) {
     return <Redirect to="/profile" />;
@@ -92,28 +90,28 @@ const Register = (props) => {
 
   return (
     <section>
-        <div className="imgBox">
-            <img src={loginbanner} />
-        </div>
+       
         <div className="contentBx">
+        <div className="overlay"></div>
             <div className="formBx regformBx">
                 <h2>Signup</h2>
           <Form onSubmit={handleSignup} ref={form}>
             
           <div className="inputBx">
-                        <span>Name</span>
+                        <span>Full Name</span>
                             <Input
                             type="text"
                             className="form-control"
                             name="name"
+                            placeholder="Full Name"
+                            autocomplete="off"
                             value={name}
                             onChange={onChangeName}
                             validations={[required]}
                           />
             </div>
 
-                    <div className="inputBx">
-                        <span>Username</span>
+                    {/* <div className="inputBx">
                             <Input
                             type="text"
                             className="form-control"
@@ -122,14 +120,15 @@ const Register = (props) => {
                             onChange={onChangeUsername}
                             validations={[required]}
                           />
-            </div>
+            </div> */}
             
             <div className="inputBx">
-                        <span>Email</span>
+                        <span>Email (optional)</span>
                             <Input
                             type="email"
                             className="form-control"
                             name="email"
+                            autocomplete="off"
                             value={email}
                             onChange={onChangeEmail}
                             validations={[required]}
@@ -138,16 +137,16 @@ const Register = (props) => {
             
 
             <div className="inputBx">
-                        <span>Mobile</span>
+                        <span>Mobile(*)</span>
                             <Input
                 type="tel"
                 minLength="10"
                 maxLength="10"
                             className="form-control"
                             name="mobile"
+                            autocomplete="off"
                             value={mobile}
                             onChange={onChangeMobile}
-                            validations={[required]}
                           />
                     </div>
 
@@ -157,6 +156,7 @@ const Register = (props) => {
                               type="password"
                               className="form-control"
                               name="password"
+                              autocomplete="off"
                               value={password}
                               onChange={onChangePassword}
                               validations={[required]}
